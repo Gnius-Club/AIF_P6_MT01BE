@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P6-TM01B</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 1B 6to Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos de Aprendizaje</strong>
+                                    <ul>
+                                        <li>Que los estudiantes entiendan qué es una variable y un condicional (if/else), y usen el acelerómetro para construir un "Dado Digital" funcional.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase</strong>
+                                    <ul>
+                                        <li>⚡Saludo de I.A. con todos</li>
+                                        <li>⚡A.I. GYM (Análisis Profundo)</li>
+                                        <li>⚡VIBE CODING (Diseño y Planificación)</li>
+                                        <li>⚡IMPLEMENTACIÓN DEL CÓDIGO (Ejecución y Desafío)</li>
+                                        <li>⚡GNIUS STORM (Cierre de Sesión)</li>
+                                    </ul>
+                                    <strong>Entregable Clave</strong>
+                                    <ul>
+                                        <li>Programa de "Dado Digital" funcional y modificado en Python, que utiliza el acelerómetro, variables y lógica condicional.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Acceso al editor de Python para micro:bit.</li>
+                                        <li>Chat de Agente Gnius (Xolo) activo.</li>
+                                        <li>Micro:bits con cables USB y portapilas (1 por cada 2 estudiantes).</li>
+                                        <li>Presentación de diapositivas.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna)</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet y el editor de Python.</li>
+                                                <li>Asegurar que los micro:bits estén listos y funcionales.</li>
+                                                <li>Probar el chat Agente Gnius (Xolo).</li>
+                                                <li>Tener la presentación de diapositivas lista para proyectar.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 2 minutos</h2>
+                <p><strong>Propósito:</strong> Crear un ambiente acogedor y guiar a los estudiantes para que activen y personalicen la interacción con el agente de IA, Xolo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Instrucción Inicial ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) Da la bienvenida a los estudiantes y guíalos para que activen a Xolo en el chat.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola de nuevo, Genios! 👋 ¡Bienvenidos a la sesión de hoy! Vamos a darle superpoderes a nuestro micro:bit con sensores. Antes de empezar, activen a nuestro amigo Xolo. Salúdenlo en el chat con su nombre y algo que les guste, como 'Hola Xolo, soy Sara y me gustan los gatos'.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Monitoreo y Verificación ⏰ 1 minuto</h3>
+                            <p>Asegúrate de que todos los estudiantes hayan recibido una respuesta de Xolo para continuar.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelente, veo que Xolo ya está conversando con ustedes! Si alguien no ha recibido respuesta, levante la mano.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: A.I. GYM (Análisis Profundo) ⏰ 8 minutos</h2>
+                <p><strong>Propósito:</strong> Introducir los conceptos teóricos clave de la sesión: el acelerómetro como sensor, las variables para almacenar datos, la aleatoriedad y la lógica condicional.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentación Conceptual y Comando para Xolo ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) Plantea un misterio para introducir el acelerómetro y guía a los estudiantes para que pidan la explicación a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Muy bien, vamos al A.I. GYM! ¿Alguna vez se han preguntado cómo sabe una consola de videojuegos si agitan el mando? ¡Lo sabe con un acelerómetro, un sensor que detecta movimiento, y el micro:bit tiene uno! Para entender esto y otras herramientas que usaremos hoy, pidan ayuda a Xolo. Escriban en el chat: 'Mi perfil es [tus gustos] y quiero que me enseñes sobre el acelerómetro, las variables y la lógica condicional del micro:bit'.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Monitoreo de Interacción y Síntesis ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) Monitorea a los alumnos mientras interactúan con Xolo y resume los puntos clave que están aprendiendo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Mientras los alumnos interactúan con Xolo) ¡Perfecto! Xolo les está explicando que una **variable** es como una 'caja' para guardar datos, como un número. Les está mostrando cómo generar un número al **azar** para nuestro dado y cómo usar el **sensor** de agitar como disparador. Finalmente, les habla de la **lógica** `if/elif` para preguntar '¿qué número salió?' y reaccionar.</p>
+                                <p class="dialogue assistant">Si algo no queda claro, ¡pregúntenle a Xolo! Prueben con:<br><strong>'Explícame qué es una variable con una analogía de fútbol.'</strong><br><strong>'¿Qué otros gestos puede detectar el acelerómetro?'</strong><br><strong>'¿Cuál es la diferencia entre `if` y `elif`?'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: VIBE CODING (Diseño y Planificación) ⏰ 10 minutos</h2>
+                <p><strong>Propósito:</strong> Diseñar el proyecto "Dado Digital", establecer su lógica y mostrar el código base que la IA generaría como punto de partida para la implementación.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentando la "Vibe" del Proyecto ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) Introduce la idea del "Dado Digital" y desglosa su plan lógico.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelente! Ahora que tienen las herramientas, vamos a la fase de diseño: VIBE CODING. La 'vibe' de hoy es construir un "Dado Digital". El plan es el siguiente: cuando agitemos el micro:bit, debe generar un número al azar del 1 al 6, guardarlo en una variable, y luego usar la lógica `if/elif` para mostrar en la pantalla el patrón de puntos correcto para ese número.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: De la Vibe al Código (Plan Inicial) ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Muestra un código simplificado como el que generaría Xolo para iniciar el proyecto.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Si le diéramos esta 'vibe' a Xolo para empezar, nos daría un código base como este. Fíjense que detecta el gesto de 'agitar' y genera un número, pero para hacerlo más simple al inicio, solo lo hace del 1 al 3 y muestra el número directamente. Este es nuestro punto de partida. En la siguiente fase, lo completaremos.</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">from microbit import *
+import random
+
+while True:
+    if accelerometer.was_gesture('shake'):
+        resultado = random.randint(1, 3) # Empezamos con 1-3 para simplificar
+        display.show(str(resultado))
+        sleep(1000)</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="activity-card" id="activity-4">
+                <h2>⚡ Actividad 4: IMPLEMENTACIÓN DEL CÓDIGO (Ejecución y Desafío) ⏰ 15 minutos</h2>
+                <p><strong>Propósito:</strong> Permitir a los estudiantes construir, probar y personalizar activamente el programa "Dado Digital", aplicando la lógica condicional completa.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Construcción del Código Completo ⏰ 10 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Guía a los estudiantes para que expandan el código base con la lógica if/elif completa para los 6 números.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Muy bien, es hora de IMPLEMENTAR! Tomen el código base y vamos a completarlo. Reemplacen la línea `display.show(str(resultado))` con la estructura `if/elif` para los 6 números. ¡Programen una condición para cada posible resultado del dado y muéstrenle el patrón de puntos correcto! Tienen que crear las 6 caras del dado.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Implementación del Desafío Creativo ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) Lanza un desafío rápido para que modifiquen una parte del código y lo hagan único.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Rápido, desafío de implementación! Modifiquen su código. Si el resultado es 6, en lugar de mostrar los seis puntos, ¡hagan que muestre una cara feliz! Solo necesitan cambiar una línea de su código. Recuerden turnarse con su compañero para cargar y probar sus ideas en el micro:bit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: GNIUS STORM (Cierre de Sesión) ⏰ 5 minutos</h2>
+                <p><strong>Propósito:</strong> Permitir que los estudiantes compartan sus creaciones, celebrar los logros y conectar el aprendizaje de hoy con la siguiente sesión.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Demostración de Proyectos ⏰ 3 minutos</h3>
+                            <p>Facilita un espacio para que un equipo muestre su dado modificado al resto de la clase.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Tiempo! ¡Momento de Gnius STORM! ¿Qué equipo quiere mostrar su dado digital con el premio de la cara feliz? ¡Agítenlo hasta que salga un 6!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Cierre y Próximos Pasos ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) Resume el logro principal de la clase y crea expectación para la siguiente sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Perfecto! Usaron variables para recordar datos y lógica para tomar decisiones. La próxima vez, haremos que los micro:bits se hablen entre sí sin cables usando la radio. ¡Vamos a crear un chat secreto!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
